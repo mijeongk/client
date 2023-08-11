@@ -1,19 +1,16 @@
 import React,{Component} from "react";
+import datatype from 'prop-types';
 
-class R20_PropsObj extends Component{
+class R23_PropsNode extends Component{
     
     render(){
-        let {
-            Obj
-        }=this.props;
-
         return (
             <div style={{padding:'0px'}}>
-                {JSON.stringify(Obj)}
+                {this.props.children}
             </div>
         )
     }    
 }
 
-export default R20_PropsObj;
+export default R23_PropsNode;
 

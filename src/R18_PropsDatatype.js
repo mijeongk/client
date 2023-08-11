@@ -12,8 +12,8 @@ class R18_PropsDatatype extends Component{
             <div style={{padding:'0px'}}>
                 <p>문자:{String}</p>
                 <p>숫자:{Number}</p>
-                <p>불린:{Boolean.toString()}</p>
-                <p>배열:{Array.toString()}</p>
+                {/* <p>불린:{Boolean.toString()}</p>
+                <p>배열:{Array.toString()}</p> */}
                 <p>객체:{JSON.stringify(ObjectJson)}</p>
                 <p>함수:{Function}</p>                
             </div>
