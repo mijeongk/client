@@ -1,16 +1,18 @@
 import React from "react";
-import './App.css';
-import R31_ReactHook from './R31_ReactHook';
+// import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import HTML_Include from './R55_Tab';
 
 function App() {
   return (
     <div>
       <h1>Start React 200!</h1>
       <p>CSS 적용하기</p>
-      <R31_ReactHook />
-    
+      <HTML_Include/>
     </div>
   );
 }
 
 export default App;
+
+

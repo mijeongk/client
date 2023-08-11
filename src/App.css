@@ -1,14 +1,17 @@
 div{
-  background-color: rgb(162, 127, 243);
+  background-color: rgb(222,189,250);
   color: #fff;
   padding: 40px;
   font-family: '맑은 고딕';
   text-align: center;
 }
-
 h1{
-  color: white;
-  background-color: #2efe2e;
+  color:#fff;
+  background-color: #98a7ef;
   padding: 10px;
   font-family: 궁서;
+}
+Col{  margin: 0;
+  padding: 0;
+  border: 1px solid #fff;
 }
