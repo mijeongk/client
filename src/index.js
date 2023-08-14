@@ -9,6 +9,7 @@ root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
+  // 디버깅? react.strictmode 하면 2번 실행된다(연습용. 실제로는x)
 );
 
 // If you want to start measuring performance in your app, pass a function
