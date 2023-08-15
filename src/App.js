@@ -1,18 +1,16 @@
-import React from "react";
-// import './App.css';
-import 'bootstrap/dist/css/bootstrap.css';
-import HTML_Include from './R67_onChange';
+/* eslint-disable */
+import React, {Component} from 'react';
+import HTML_Include from './R86_cookieLoad';
 
-function App() {
-  return (
-    <div>
-      <h1>Start React 200!</h1>
-      <p>CSS 적용하기</p>
-      <HTML_Include/>
-    </div>
-  );
+class App extends Component {
+  render(){
+    return (
+      <div>
+        <h1>Start React 200!</h1>
+        <HTML_Include/>
+      </div>
+    );
+  }  
 }
 
 export default App;
-
-

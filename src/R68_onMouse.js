@@ -1,15 +1,14 @@
 import React,{Component} from "react";
 
-class R67_onChange extends Component{    
-    change=(e)=>{
-        var a=e.target.value;
-        console.log('값:'+a);
+class R68_onMouse extends Component{    
+    mouse=(e)=>{
+        console.log('값:'+e);
     }
     render(){
         return (
             <div>
-                <input type="text" onChange={this.change}/>
-                <select onChange={this.change}>
+                <input type="text" onMouseOut={e=>this.mouse('input')}/>
+                <select onMouseOut={e=>this.mouse('select')}>
                     <option value="react">react</option>
                     <option value="200">200</option>
                 </select>
@@ -17,5 +16,5 @@ class R67_onChange extends Component{
         )
     }    
 }
-export default R67_onChange;
+export default R68_onMouse;
 
