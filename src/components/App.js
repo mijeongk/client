@@ -9,6 +9,7 @@ import Footer from './Footer/Footer';
 import LoginForm from './LoginForm';
 import Debounce from './R94_Debounce';
 import AxiosGet from './AxiosGet';
+import CustomerList from './CustomerList';
 
 class App extends Component {
   render(){
@@ -20,6 +21,7 @@ class App extends Component {
         <Route exact path='/' component={LoginForm}/>
         <Route exact path='/Debounce' component={Debounce}/>
         <Route exact path='/AxiosGet' component={AxiosGet}/>
+        <Route exact path='/CustomerList' component={CustomerList}/>
         <Footer/>
       </div>
     );

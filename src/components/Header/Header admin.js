@@ -31,7 +31,7 @@ class Header extends Component {
                             <Link to={'/AxiosGet'}>Node 서버 요청</Link>
                         </li>
                         <li className="menulist">
-                            <Link to={'/AdminSoftwareList'}>Software Tools 관리</Link>
+                            <Link to={'/customerList'}>customerList 관리</Link>
                         </li>
                         <li className="menulist">
                             <Link to={'/AdminDataSourceList'}>Data Sources 관리</Link>
