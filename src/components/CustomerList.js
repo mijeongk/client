@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import axios from "axios";
 
-class CustomerList extends Component {
+class customerList extends Component {
     constructor(props) {
         super(props);
+
         this.state = {
-            responseList: '',   //서버 배열값
-            appendList: '',     //배열값->HTML 변경
+            responseList: '',
+            appendList: '',
         }
     }
 
@@ -20,9 +21,8 @@ class CustomerList extends Component {
         })
         .then( response => {
             try {
-                console.log('responseList:'+response.data);
-                
-                this.setState({ responseList: response.data });
+                console.log('responseList : ' + response.data) ;
+                this.setState({ responseList:  response.data });
                 this.setState({ appendList: this.customerListAppend() });
             } catch (error) {
                 alert('작업중 오류가 발생하였습니다.');
@@ -33,24 +33,23 @@ class CustomerList extends Component {
 
     customerListAppend = () => {
         let result = []
-        var list = this.state.responseList;
-        console.log('list:'+list);
-
+        var list = this.state.responseList ;
+        console.log('list :' + list) ;
         for(let i=0; i<list.length; i++){
-            var no = list[i][0];
-            var name = list[i][1];
-            var tel = list[i][2];
+            var no = list[i][0] ;
+            var name = list[i][1] ;
+            var tel = list[i][2] ;
 
             result.push(
                 <tr className="hidden_type">
                     <td>{no}</td>
                     <td>{name}</td>
                     <td>{tel}</td>
-                    <td>
-                        <Link to={'/AdminSoftwareView/'} 
-                        className="bt_c1 bt_c2 w50_b">수정</Link>
+                    {<td>
+                        {/* <Link to={'/AdminSoftwareView/'+data.swt_code} 
+                        className="bt_c1 bt_c2 w50_b">수정</Link> */}
                         <a href="#n" className="bt_c1 w50_b" >삭제</a>
-                    </td>
+                    </td> }
                 </tr>
             )
         }
@@ -87,4 +86,4 @@ class CustomerList extends Component {
     }
 }
 
-export default CustomerList;
+export default customerList;
