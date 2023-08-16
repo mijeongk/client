@@ -7,6 +7,8 @@ import '../css/new.css';
 import Header from './Header/Header admin';
 import Footer from './Footer/Footer';
 import LoginForm from './LoginForm';
+import Debounce from './R94_Debounce';
+
 
 class App extends Component {
   render(){
@@ -16,10 +18,11 @@ class App extends Component {
         {/* <Route exact path='/' component={reactRouter}/>
         <Route exact path='/reactRouter2' component={reactRouter2}/> */}
         <Route exact path='/' component={LoginForm}/>
+        <Route exact path='/Debounce' component={Debounce}/>
         <Footer/>
       </div>
     );
-  }  
+  }
 }
 
 export default App;
