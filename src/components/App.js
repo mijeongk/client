@@ -8,7 +8,7 @@ import Header from './Header/Header admin';
 import Footer from './Footer/Footer';
 import LoginForm from './LoginForm';
 import Debounce from './R94_Debounce';
-
+import AxiosGet from './AxiosGet';
 
 class App extends Component {
   render(){
@@ -19,10 +19,11 @@ class App extends Component {
         <Route exact path='/reactRouter2' component={reactRouter2}/> */}
         <Route exact path='/' component={LoginForm}/>
         <Route exact path='/Debounce' component={Debounce}/>
+        <Route exact path='/AxiosGet' component={AxiosGet}/>
         <Footer/>
       </div>
     );
-  }
+  }  
 }
 
 export default App;

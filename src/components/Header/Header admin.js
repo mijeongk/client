@@ -25,10 +25,10 @@ class Header extends Component {
                     <nav className="gnb gnb_admin">
                     <ul className="af">
                         <li className="menulist">
-                            <Link to={'/Debounce'}>94 lodash 디바운스 </Link>
+                            <Link to={'/Debounce'}>94 디바운스</Link>
                         </li>
                         <li className="menulist">
-                            <Link to={'/AdminResearchProject'}>Research Projects 관리</Link>
+                            <Link to={'/AxiosGet'}>Node 서버 요청</Link>
                         </li>
                         <li className="menulist">
                             <Link to={'/AdminSoftwareList'}>Software Tools 관리</Link>
